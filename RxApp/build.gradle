@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.dover.how2newapp"
+        applicationId "com.dover.rxapp"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
@@ -17,21 +17,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-//对资源文件进行分包
-    //1.创建文件夹:  在 res -> layout 下创建文件夹(根据分包名)
-    //2.配置：在module对应的build.gradle的Android目录下添加SourceSets配置：
-    sourceSets {
-        main {
-            res.srcDirs = [
-                    'src/main/res',
-                    'src/main/res/layout',
-                    'src/main/res/layouts/activities',
-                    'src/main/res/layouts/fragments'
-            ]
-        }
-    }
-
 }
 
 dependencies {

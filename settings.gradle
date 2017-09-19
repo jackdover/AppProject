@@ -1,1 +1,1 @@
-include ':app', ':How2NewApp'
+include ':app', ':How2NewApp', ':RxApp'
